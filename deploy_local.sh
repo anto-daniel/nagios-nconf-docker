@@ -16,6 +16,7 @@ if [[ $md5 != "68bd78c0b1786a6600b747b584b96871" ]];then
 cp -p ${OUTPUT_DIR}${CONF_ARCHIVE} ${TEMP_DIR}${CONF_ARCHIVE}
 tar -xf ${TEMP_DIR}${CONF_ARCHIVE} -C ${NAGIOS_DIR}
 #/etc/init.d/nagios reload
+cp -rfv /citoengine.cfg /usr/local/nagios/etc/global
 bash /var/www/nconf/ADD-ONS/citoengine.sh
 supervisorctl restart nagios4
 #fi
