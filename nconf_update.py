@@ -42,9 +42,9 @@ def main():
         print row[0];
         print 444444;
       #  addr = row[0]
-        if  "metrics-web.app.uj1.inmobi.com" in row[0]:
+        if  "metrics-web.app.uj1.example.com" in row[0]:
              print 55555555555555;
-             newentry=row[0].replace("metrics-web.app.uj1.inmobi.com","app-metrics-web.app.uj1.inmobi.com");
+             newentry=row[0].replace("metrics-web.app.uj1.example.com","app-metrics-web.app.uj1.example.com");
              print newentry;
              try:
               cmd = "update ConfigValues set attr_value='%s' where attr_value='%s'" % (newentry, row[0])

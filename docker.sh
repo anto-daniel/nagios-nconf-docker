@@ -19,7 +19,7 @@ while getopts "i,b,c,n" opt; do
       n)
        sudo killall docker;
  #      sudo docker run   -e "stack=geo" -e "colo=uj1"  -p 80:80 -i -t myd 
-       sudo docker run  -d  --restart=always -h docker.geo.mon.hkg1.inmobi.com  -e "stack=geo" -e "colo=hkg1"  -p 80:80 -t monsetup
+       sudo docker run  -d  --restart=always -h docker.geo.mon.hkg1.example.com  -e "stack=geo" -e "colo=hkg1"  -p 80:80 -t monsetup
        ;;
      \?)
       echo "Invalid option: -$OPTARG" >&2

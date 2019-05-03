@@ -28,5 +28,5 @@ if [ $status == 0 ]
 then
 cp /citoengine.cfg /usr/local/nagios/etc/global/
 mysqldump -u root -pNag123 nconf >nconf_dump.sql
-s3cmd -c /.s3cfg  put  nconf_dump.sql  "s3://inmobi-appops-nconf/${stack}/${colo}/"
+s3cmd -c /.s3cfg  put  nconf_dump.sql  "s3://example-appops-nconf/${stack}/${colo}/"
 fi;

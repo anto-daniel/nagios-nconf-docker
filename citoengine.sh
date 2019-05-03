@@ -41,7 +41,7 @@ define contact {
                 alias                                 noc-mon
                 host_notification_options             d
                 service_notification_options          c
-                email                                 noc-mon@inmobi.com
+                email                                 noc-mon@example.com
                 host_notification_period              24x7
                 service_notification_period           24x7
                 host_notification_commands            notify-host-by-email

@@ -7,7 +7,7 @@ sleep 10s
 # echo "GRANT ALL ON *.* TO admin@'%' IDENTIFIED BY 'changeme' WITH GRANT OPTION; FLUSH PRIVILEGES" | mysql
 #echo "GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, ALTER ON nconf.* \
 #TO 'root'@'localhost' IDENTIFIED BY 'Nag123'"|mysql;
-#s3cmd -c /.s3cfg  get   "s3://inmobi-appops-nconf/${stack}/${colo}/nconf_dump.sql"
+#s3cmd -c /.s3cfg  get   "s3://example-appops-nconf/${stack}/${colo}/nconf_dump.sql"
 #mysql -u root -pNag123 nconf < nconf_dump.sql
 mysql -uroot -pNag123 < /create_database.sql
 cp -dpR /var/www/nconf/config.orig/* /var/www/nconf/config/
